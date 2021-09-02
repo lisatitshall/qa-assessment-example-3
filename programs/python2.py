@@ -11,11 +11,7 @@
 # one(['tic', 'tac', 'toe']) → {'tic':1, 'tac':1, 'toe':1}
     
 def one(items):
-    _dict = {}
-    for item in items:
-        number = items.count(item)
-        _dict[item] = number
-    return _dict
+    return {item:items.count(item) for item in items}
 
 # <QUESTION 2>
 
