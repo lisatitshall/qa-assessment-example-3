@@ -106,4 +106,15 @@ pass
 # five('54321') → '54321'
 
 def five(string):
+    newlist = []
+    for letter in string:
+        if not (letter.isalpha()):
+            newlist.append(letter)
+        elif (letter == "a"):
+            newlist.append("z")
+        elif (letter == "A"):
+            newlist.append("Z")
+        else:
+            newlist.append(chr(ord(letter)-1))
+    return "".join(newlist)
     pass
