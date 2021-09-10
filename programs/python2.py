@@ -29,6 +29,16 @@ def one(items):
 # two(-5, 2, '/') → -2.5
 
 def two(a, b, operator):
+    if (operator == '+'):
+        return a + b
+    elif (operator == '-'):
+        return a - b
+    elif (operator == '*'):
+        return a * b
+    elif (operator == '/'):
+        return a / b
+    else:
+        return "Not a valid operator"
     pass
 
 # <QUESTION 3>
