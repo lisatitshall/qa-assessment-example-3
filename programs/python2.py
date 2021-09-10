@@ -11,6 +11,7 @@
 # one(['tic', 'tac', 'toe']) → {'tic':1, 'tac':1, 'toe':1}
     
 def one(items):
+    return {item : items.count(item) for item in items}
     pass
 
 # <QUESTION 2>
