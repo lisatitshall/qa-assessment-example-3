@@ -59,7 +59,12 @@ def two(a, b, operator):
 # We can use `x ** 0.5` to get the square root of `x`
 
 def three(num):
-    pass
+    i = num
+    while i >= 1:
+        if i %(i ** 0.5) == 0:
+            return i
+        i -=1
+pass
 
 # <QUESTION 4>
 
