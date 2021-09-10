@@ -77,7 +77,16 @@ pass
 # four(10, 50) → 10
 
 def four(a, b):
-    pass
+    c = min(a,b)
+    factorlist = []
+    i = 1
+    while i <= c:
+        if(a % i == 0 and b % i == 0):
+            factorlist.append(i)
+        i +=1
+    factorlist.sort()
+    return factorlist[-1]
+pass
 
 # <QUESTION 5>
 
